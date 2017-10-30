@@ -1,0 +1,53 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SINGLE LINE CHART"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="80dp"
+            android:weightSum="1">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lchart"
+                android:layout_width="match_parent"
+                android:layout_height = "400dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.76" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/navigation_next_item"
+            app:backgroundTint="#2b81ef" />
+
+        <android.support.design.widget.FloatingActionButton android:id="@+id/back_fab"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left" android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/navigation_previous_item"
+            app:backgroundTint="#2b81ef" />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
+
